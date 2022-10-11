@@ -1,20 +1,60 @@
 .chatbox{
+    overflow-y: scroll;
     height: 500px;
-    width: 100vw;
+    width: calc(100vw/2);
     background-color: beige;
+    scroll-behavior:initial;
 }
 
 
-.text{
-    width: 100px;
-    height: 30px;
-    border: 1px solid white;
+.text_left{
+    width: 150px;
+    height: auto;
+    /* padding: 20px 0 20px 20px; */
+    border: 2px solid white;
     background-color:lightgreen;
-    margin-left: 20px;
+    margin-left: 15px;
     text-align: center;
-    border-radius: 5px;
-    border-bottom-left-radius: 50%;
-    border-top-left-radius: 50%;
-    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    /* border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%; */
+    margin-bottom: 15px;
 }
 
+.text_right{
+    width: 150px;
+    height: auto;
+    /* padding: 20px 0 20px 20px; */
+    border: 2px solid white;
+    background-color:rgb(4, 88, 4);
+    margin-left: 15px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+    /* border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%; */
+    margin-bottom: 15px;
+}
+
+
+.inputBox input{
+    width: 300px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: antiquewhite;
+}
+
+.main{
+    display: flex;
+    text-align: center;
+}
+
+.activeUsers{
+    text-align: center;
+    align-items: center;
+    width: calc(100vw/2);
+    margin-top: 40px;
+}

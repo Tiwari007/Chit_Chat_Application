@@ -17,6 +17,7 @@ const io = Socket(server, {
 
 
 let messages = []
+let usernames = []
 
 io.on("connection", (socket) => {
     console.log("connected to", socket.id);
@@ -24,7 +25,18 @@ io.on("connection", (socket) => {
     socket.on("messages_data", (data) => {
         console.log(data);
         messages.push(data)
-        io.sockets.emit("messages_from_server", messages)
+        io.sockets.emit("messages_from_server", {
+            message: messages,
+            user: socket.user
+        })
+    })
+
+
+    socket.on("username_data", (data) => {
+        console.log(data);
+        socket.user = data;
+        usernames.push(data)
+        io.sockets.emit("username_from_server", usernames)
     })
 
 
