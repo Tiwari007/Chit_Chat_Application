@@ -6,4 +6,9 @@
   - Use the command "npm start"  
 - backend_side ( NodeJS, ExpressJS, Socket.io ) 
   - Use the command "npm start"
+  
+  
+  
+  
+ ![](https://github.com/Tiwari007/Chit_Chat_Application/blob/master/Media/ChitChat.gif)
 
